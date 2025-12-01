@@ -12,4 +12,5 @@ Source code folder contains a separate license file that must **NOT** be removed
 Removing this license file directly violates terms and conditions of the software under testing.
 Individuals who remove or modify the license file will also carry the consequences.
 
+# report coverage
 [![Coverage Status](https://coveralls.io/repos/github/Hassan-Abidi/SOFTWARE_TESTING2025/badge.svg?branch=main)](https://coveralls.io/github/Hassan-Abidi/SOFTWARE_TESTING2025?branch=main)
