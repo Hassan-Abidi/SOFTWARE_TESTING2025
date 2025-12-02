@@ -22,7 +22,7 @@ describe('clamp()', () => {
     expect(clamp("4", "1", "5")).toBe(1);
   });
   test('handles positive input with only negative limits', () => {
-    expect(clamp(3, -10, -1)).toBe(-10);
+    expect(clamp(3, -10, -1)).toBe(-10);//bug
   });
   test('returns NaN when input is not a number', () => {
     expect(clamp(NaN, 0, 5)).toBeNaN();
@@ -31,13 +31,13 @@ describe('clamp()', () => {
     expect(clamp(10, NaN, 5)).toBe(0);
   });
   test('handles negative floating point inputs too', () => {
-    expect(clamp(-2.7, -5, 5)).toBe(-5);
+    expect(clamp(-2.7, -5, 5)).toBe(-5);//bug
   });
   test('handles positive floating point inputs too', () => {
-    expect(clamp(3.5, -5, 5)).toBe(-5);
+    expect(clamp(3.5, -5, 5)).toBe(-5);//bug
   });
    test('upper bound as NaN makes the result default to lower bound', () => {
-    expect(clamp(10, -5, NaN)).toBe(-5);
+    expect(clamp(10, -5, NaN)).toBe(-5); //bug issue
   });
   test('lower bound as NaN also makes clamp default to 0', () => {
     expect(clamp(10, NaN, 5)).toBe(0);
