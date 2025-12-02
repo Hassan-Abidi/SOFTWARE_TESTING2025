@@ -36,4 +36,10 @@ describe('clamp()', () => {
   test('handles positive floating point inputs too', () => {
     expect(clamp(3.5, -5, 5)).toBe(-5);
   });
+   test('upper bound as NaN makes the result default to lower bound', () => {
+    expect(clamp(10, -5, NaN)).toBe(-5);
+  });
+  test('lower bound as NaN also makes clamp default to 0', () => {
+    expect(clamp(10, NaN, 5)).toBe(0);
+  });
 });
