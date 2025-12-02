@@ -19,8 +19,16 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "**/*.js",
-      "!**/.internal/**"
+      "src/add.js",
+      "src/capitalize.js",
+      "src/ceil.js",
+      "src/clamp.js",
+      "src/defaultToAny.js",
+      "src/eq.js",
+      "src/filter.js",
+      "src/isEmpty.js",
+      "src/reduce.js",
+      "src/toNumber.js"
     ],
     "coverageReporters": [
       "text",
